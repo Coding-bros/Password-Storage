@@ -27,10 +27,8 @@ def decryptText(text):
 
 # a3bpzn0WdTjj0JUClTeuo8logNYoQM6mKluczRuzTQw=
 
-
-
 if __name__=="__main__":
-    y = input()
+    y = input("Enter The Encrpted Password : ")
     z = bytes(y, 'utf-8')
     print(z, encrypter.decrypt(z).decode())
 

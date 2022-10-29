@@ -65,7 +65,7 @@ def add_email():
     if EncOrUsual == 2:
         if password == password:
             NoobText = password
-            pw = encryptText(NoobText)
+            pw = f"{f.encryptText(NoobText)}"
             password = pw
             Stored = [(name), (websiteName), (pw)]
             c.executemany("INSERT INTO passwords VALUES (?,?,?)", (Stored,))
